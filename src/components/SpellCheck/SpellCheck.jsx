@@ -29,7 +29,7 @@ export default function SpellCheck() {
     const firstCorrection = correctedWords.find(
       (word, index) => word !== words[index]
     );
-    setSuggestedText({ suggestedText: firstCorrection || "" });
+    setSuggestedText(firstCorrection || "");
   };
 
     return (
